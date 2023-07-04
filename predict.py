@@ -2,8 +2,8 @@ import numpy as np
 import pandas as pd
 import pickle
 
-model=pickle.load(open('.\Models\LSTM_model.pkl','rb'))
-scaler=pickle.load(open('.\Models\scaler_model.pkl','rb'))
+model=pickle.load(open('./Models/LSTM_model.pkl','rb'))
+scaler=pickle.load(open('./Models/scaler_model.pkl','rb'))
 df=pd.read_csv('.\Data\ice.csv')
 df1=df.reset_index()['Icecream']
 df1=df1[527:]
